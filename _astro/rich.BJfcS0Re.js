@@ -1,0 +1,2 @@
+function e(e){let t=document.createDocumentFragment();return e.split(`
+`).forEach((e,n)=>{n>0&&t.appendChild(document.createElement(`br`)),e.split(/(\*\*[^*]+\*\*)/).forEach(e=>{if(!e)return;let n=e.match(/^\*\*([^*]+)\*\*$/);if(n){let e=document.createElement(`strong`);e.textContent=n[1],t.appendChild(e)}else t.appendChild(document.createTextNode(e))})}),t}export{e as t};
